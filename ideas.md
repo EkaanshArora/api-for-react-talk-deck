@@ -5,20 +5,18 @@
 - [x] What is an API
   - car abstraction
   - mermaid diagram
-- [ ] Why do I care
-  - DX
+- [x] Why do I care
 - [x] What's it mean for React
-  - some examples
-    - always multiple ways to do things (some nicer)
+  - imperative vs declarative
+  - always multiple ways to do things (some nicer)
   - [ ] more example
-- [ ] agora react sdk
-  - [ ] before
-  - [ ] interrim solution
-  - [ ] after
+- [x] agora react sdk
+  - [x] before
+  - [ ] ~~interrim solution~~
+- break
+  - [x] after
 - [x] taxonomy
-- [ ] errors
 - [x] documentation
-- [ ] examples
 
 ---
 

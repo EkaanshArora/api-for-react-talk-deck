@@ -12,7 +12,7 @@ drawings:
 <br>
 <v-click>
 
-#### (or) How we shipped an SDK for **React**
+#### How we shipped an SDK for **React**
 
 </v-click>
 <br><br><br><br><br>
@@ -54,10 +54,24 @@ layout: two-cols
 </div>
 
 ---
+
+# Do you know:
+<v-clicks>
+
+## 1. How to drive a car?
+
+#### yeah
+## 2. How each individual piece of a car works?
+#### No
+#### Car's expose a great API 
+
+</v-clicks>
+
+---
 clicks: 9
 ---
 
-<div v-if="$slidev.nav.currentPage===3" v-motion
+<div v-if="$slidev.nav.currentPage===4" v-motion
     :initial="{ x: 0, y: 0, opacity: 0}"
     :enter="{ x:0, y: -20, opacity: 1, }">
 
@@ -157,26 +171,31 @@ CPU --> id1(Browser) --> id3(React) --> id2(React Query) --> id4(User Code)
 
 ## What makes a good API? 
 
-<div v-click=1>
+<div v-click=2>
 
 #### Building the right abstractions
 </div>
 
 <br />
-<div v-click=2>
+<div v-click=1>
 
 - **- extensibility/flexibility**
+- **- ease of use**
 - **- granularity**
 - **- atomicity**
+- **- consistency/reliability**
 - **- semantics/syntax**
-- **- context-aware**
 
 </div>
 <div v-click=3>
 <br />
 
-#### finding the balance - [ekaansh's low-code talk](https://www.youtube.com/watch?v=f33wFwE5tds)
+#### finding the balance
+<div v-click=4>
 
+[ekaansh's low-code talk](https://www.youtube.com/watch?v=f33wFwE5tds)
+
+</div>
 </div>
 
 ---
@@ -194,7 +213,8 @@ CPU --> id1(Browser) --> id3(React) --> id2(React Query) --> id4(User Code)
 
 <div  v-motion :initial="{ x: 0, y: -10, opacity: 0}" :enter="{ x:0, y: 0, opacity: 1, }">
 
-```jsx {1-20|5-15}
+#### Skia comes from C++, an imperative language
+```jsx {1-20|17|5-15}
 export const HelloWorld = () => {
   const width = 256;
   const height = 256;
@@ -219,6 +239,7 @@ export const HelloWorld = () => {
 
 ---
 
+#### React Skia exposes a declarative API
 ```jsx {1-20|5-16}
 export const HelloWorld = () => {
   const size = 256;
@@ -242,6 +263,7 @@ export const HelloWorld = () => {
 
 ---
 
+#### Offers a way to write imperative code
 ```jsx {7-14}
 export const HelloWorld = () => {
   const size = 256;
@@ -267,7 +289,7 @@ export const HelloWorld = () => {
 
 ---
 
-## Framework specific design
+## APIs for React
 
 SwiftUI
 ```swift
@@ -287,7 +309,7 @@ React Library
 
 <div  v-motion :initial="{ x: 0, y: 40, opacity: 0}" :enter="{ x:0, y: 0, opacity: 1, }">
 
-
+#### APIs for React
 <div v-if="$slidev.nav.clicks===0">
 <img src="/images/chat0.png" style="width: 40%;margin: auto" />
 <img src="/images/chat.png" style="width: 40%;margin: auto" />
@@ -334,7 +356,7 @@ React Library
 
 <div  v-motion :initial="{ x: 0, y: 40, opacity: 0}" :enter="{ x:0, y: 0, opacity: 1, }">
 
-#### 
+#### APIs for React
 
 <div v-if="$slidev.nav.clicks===0" style="display: flex; flex-direction: row">
   <div>
@@ -382,7 +404,7 @@ React Library
 - #### > simpler code => less bugs
 - #### > better DX => happier team
 - #### > easier to maintain
-- #### > people want to use your code and befriend you => more friends
+- #### > profit?
 
 </v-clicks>
 
@@ -454,7 +476,7 @@ function App () {
 
 > Modify the DOM
 
-```tsx{2|4-8|10-13|all}
+```tsx{2|10-13|4-8||all}
 ...
   const videoPlayerRef = useRef(null)
   
@@ -475,21 +497,7 @@ function App () {
 
 > Sync the state
 
-```ts
-const [users, setUsers] = useState([])
-...
-return (
-  users.map(user => <DisplayUser user={user} />)
-)
-```
-
----
-
-## JavaScript SDK in React
-
-> Sync the state
-
-```ts{1,16-18|3-9|10-12|all}
+```ts{1,15-18|3-9|10-12|all}
 const [users, setUsers] = useState([])
 
 useEffect(() => {
