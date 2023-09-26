@@ -60,7 +60,7 @@ layout: two-cols
 
 ## 1. How to drive a car?
 
-#### yeah
+#### yes, <span style="font-size: 12px">or you can conciously learn</span>
 ## 2. How each individual piece of a car works?
 #### No
 #### Car's expose a great API 
@@ -96,11 +96,10 @@ clicks: 9
     <h4 v-click="2" style="margin-top: -12px">without having to learn the complexity of the system</h4>
 </div>
 </div>
-<div v-click=2 style="display:none"></div>
 
 <div v-if="$slidev.nav.clicks>2 && $slidev.nav.clicks<10" style="position:relative; height: 35vh;display: flex;justify-content: center;">
 <div style="position:absolute; bottom: 0px;">
-
+<!-- ABSTRACTIONS! -->
 <div v-if="$slidev.nav.clicks===3">
 
 ```mermaid {scale: 0.8}
@@ -151,7 +150,7 @@ CPU --> Assembly --> id1(High Level Languages) --> Libraries--> id4(User Code)
 ```mermaid {scale: 0.8}
 
 flowchart BT
-CPU --> id1(JavaScript runtime) --> id2(Environment = Node/Bun/Deno) --> id3(Libraries = Express/Elysia/Hono) --> id4(User Code)
+CPU --> id1(JavaScript engine = V8/JSC/Hermes) --> id2(Runtime = Node/Bun/Deno) --> id3(Libraries = Express/Elysia/Hono) --> id4(User Code)
 
 ```
 </div>
@@ -168,7 +167,9 @@ CPU --> id1(Browser) --> id3(React) --> id2(React Query) --> id4(User Code)
 </div>
 
 ---
-
+layout: two-cols
+clicks: 5
+---
 ## What makes a good API? 
 
 <div v-click=2>
@@ -191,12 +192,43 @@ CPU --> id1(Browser) --> id3(React) --> id2(React Query) --> id4(User Code)
 <br />
 
 #### finding the balance
-<div v-click=4>
+<div v-click=5>
 
 [ekaansh's low-code talk](https://www.youtube.com/watch?v=f33wFwE5tds)
 
 </div>
 </div>
+::right::
+<div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<img v-click=3 src="/images/focus.png"/>
+<img v-click=4 src="/images/dog.gif" style="margin-top: -300px"/>
+<img v-click=5 src="/images/tweets.png" style="margin-top: -250px"/>
+</div>
+
+---
+clicks: 5
+---
+## Why should you care about designing good apis?
+
+<br />
+
+<v-clicks>
+
+- #### > reduce complexity
+- #### > simpler code => less bugs
+- #### > better DX => happier team
+- #### > easier to maintain
+- #### > profit?
+
+</v-clicks>
+
+<img src="/images/cat.jpeg" width="300" v-click=5 style="margin-left: 450px;margin-top: -220px" />
+<!-- SaaS, inter company, self use -->
 
 ---
 
@@ -396,20 +428,6 @@ React Library
 
 ---
 
-## Why should you care about designing good apis?
-
-<v-clicks>
-
-- #### > reduce complexity
-- #### > simpler code => less bugs
-- #### > better DX => happier team
-- #### > easier to maintain
-- #### > profit?
-
-</v-clicks>
-
----
-
 ## Story Time
 #### Agora builds real-time engagement SDKs for all major platforms: Web, Android, iOS, Windows etc.
 <v-clicks>
@@ -472,7 +490,7 @@ function App () {
 ---
 
 
-## JavaScript SDK in React
+## JavaScript SDK <span style="color: #22abff">in React</span>
 
 > Modify the DOM
 
@@ -493,7 +511,7 @@ function App () {
 
 ---
 
-## JavaScript SDK in React
+## JavaScript SDK <span style="color: #22abff">in React</span>
 
 > Sync the state
 
@@ -520,7 +538,7 @@ return (
 
 ---
 
-## JavaScript SDK in React
+## JavaScript SDK <span style="color: #22abff">in React</span>
 
 > Side Effects
 
