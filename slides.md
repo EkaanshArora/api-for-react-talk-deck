@@ -565,7 +565,17 @@ useEffect(() => {
 
 ---
 
-break
+## Let's hydrate (Recap)
+
+<br/>
+<br/>
+
+#### > Declarative APIs
+#### > Modify the DOM
+#### > Sync the state
+#### > Side Effects
+
+<img src="/images/recap.gif" style="position: absolute;right: 32px; top: 30%" />
 
 ---
 
