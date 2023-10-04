@@ -98,8 +98,7 @@ clicks: 9
 </div>
 
 <div v-if="$slidev.nav.clicks>2 && $slidev.nav.clicks<10" style="position:relative; height: 35vh;display: flex;justify-content: center;">
-<div style="position:absolute; bottom: 0px;">
-<!-- ABSTRACTIONS! -->
+<div style="position:absolute; bottom: 10px;">
 <div v-if="$slidev.nav.clicks===3">
 
 ```mermaid {scale: 0.8}
@@ -165,6 +164,7 @@ CPU --> id1(Browser) --> id3(React) --> id2(React Query) --> id4(User Code)
 </div>
 </div>
 </div>
+<!-- ABSTRACTIONS! -->
 
 ---
 layout: two-cols
@@ -207,7 +207,7 @@ clicks: 5
 <br />
 <img v-click=3 src="/images/focus.png"/>
 <img v-click=4 src="/images/dog.gif" style="margin-top: -300px"/>
-<img v-click=5 src="/images/tweets.png" style="margin-top: -250px"/>
+<!-- <img v-click=5 src="/images/tweets.png" style="margin-top: -250px"/> -->
 </div>
 
 ---
@@ -321,7 +321,7 @@ export const HelloWorld = () => {
 
 ---
 
-## APIs for React
+## Respecting the Platform
 
 SwiftUI
 ```swift
@@ -710,6 +710,12 @@ clicks: 3
 <img src="/images/manual.png" style="width: 70%;margin: auto">
 </v-clicks>
 
+
+---
+
+# Agora React SDK is open-source
+
+## [github.com/AgoraIO-Extensions/agora-rtc-react](https://github.com/AgoraIO-Extensions/agora-rtc-react)
 
 ---
 
